@@ -23,6 +23,6 @@ This project includes a web app where an emergency worker can input a new messag
 
 ## Using the files
 
-* To run ETL pipeline: data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-* To run the ML pipeline: python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+* To run ETL pipeline: python Data/process_data.py Data/disaster_messages.csv Data/disaster_categories.csv Data/DisasterResponse.db
+* To run the ML pipeline: python Models/train_classifier.py Data/DisasterResponse.db Models/classifier.pkl
 * To run web app: python app/run.py
