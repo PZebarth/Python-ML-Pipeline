@@ -68,7 +68,7 @@ def tokenize(text):
     return clean_tokens
 
 
-def build_model():
+def build_model(X,Y):
     '''
     Creates model from cross validation of parameters for pipeline.
 
@@ -101,9 +101,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     Y_pred = model.predict(X_test)
 
     # classification report for each category
-    for item, col in enumerate(Y_test):
-        print(col)
-        print(classification_report(Y_test[col], Y_pred[:, item]))
+    print(classification_report(Y_test, Y_pred, target_names = category_names))
 
 def save_model(model, model_filepath):
     '''
