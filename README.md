@@ -20,6 +20,9 @@ This project includes a web app where an emergency worker can input a new messag
 > * **ML Pipeline Preparation.ipynb**: ML Implementation process analysis and explanation
 > * **process_data.py**: Loads the messages and categories datasets, merges the two datasets, cleans the data, stores it in a SQLite database <br>
 > * **train_classifier.py**: Loads data from the SQLite database, splits the dataset into training and test sets, builds a text processing and machine learning pipeline, trains and tunes a model using GridSearchCV, outputs results on the test set, exports the final model as a pickle file <br>
+> * **run.py**: creates flask app to display webpage
+> * **master.html**: 
+> * **go.html**: 
 
 ## Using the files
 
